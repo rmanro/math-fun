@@ -117,11 +117,13 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 // Write your code here
 
 function sumArray(testArray){ //eslint-disable-line
-
+    const sumNumAB = sum(testArray[0],testArray[1])[0];
+    const sumNumABC = sum(sumNumAB,testArray[2])[0];
+    return[sumNumABC, testArray + ' was passed in as an array of numbers, and ' + sumNumABC + ' is their sum.'];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
-// testSumArray();
+testSumArray();
 
 
 /////////////////////////////////////
