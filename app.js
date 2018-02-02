@@ -152,8 +152,10 @@ new branch for your work on the next question!
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-
+    const productAB = multiply(testArray[0],testArray[1])[0];
+    const productABC = multiply(productAB,testArray[2])[0];
+    return[productABC, 'The numbers ' + testArray + ' have a product of ' + productABC + '.'];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray();
+testMultiplyArray();
